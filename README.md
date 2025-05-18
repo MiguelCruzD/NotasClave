@@ -1,54 +1,54 @@
-<header>
+# Notas de inteligencia artificial
+ ## Introduccion a la inteligencia Artificial.
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+¿Que es la inteligencia artificial?
+Es el desarrollo de agentes racionales de una maximizacion la esperanza de una utilidad futura.
+Hay un entorno y un agente, el agente le da acciones al entorno, y el entorno le da percepciones al agente.
+Se llevan medidas de desempeño y utilidad
 
-# GitHub Pages
+Las tareas llevan una medida de desempeño, percepciones, acciones, y entorno.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+# Árboles de Decisión y Aprendizaje de Máquina
 
-</header>
+## ¿Qué es el Aprendizaje de Máquina?
+El aprendizaje de máquina es un campo de estudio que permite que las computadoras tengan la capacidad de aprender sin ser programadas explícitamente.
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+### Motivación
+La dificultad de escribir un programa que calcule la probabilidad de que una transacción en una línea sea fraudulenta ha sido una de las principales razones para desarrollar el aprendizaje de máquina.
 
-## Step 1: Enable GitHub Pages
+### Solución
+Un algoritmo de aprendizaje de máquina puede generar un modelo que devuelva predicciones con un margen de confianza. Esto es útil para manejar datos complejos y mejorar la eficiencia en su procesamiento.
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+El aprendizaje de máquina permite generalizar datos mediante cálculos estadísticos. A partir de una muestra, se estima un margen de error y se verifica la calidad de la muestra.
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+## Métodos de Aprendizaje de Máquina
+Existen varios enfoques en el aprendizaje de máquina, entre ellos:
+- **Modelos descriptivos**
+- **Modelos lineales**
+- **Redes neuronales**
+- **Métodos de ensamble** (aunque no los conozco bien, me enfocaré en los árboles de decisión)
 
-### :keyboard: Activity: Enable GitHub Pages
+## Árboles de Decisión
+Los árboles de decisión son modelos que pueden representar cualquier función de entrada basada en atributos.
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+Se dividen en dos tipos:
+1. **Árboles de decisión cuantitativos**
+2. **Árboles de decisión cualitativos**
 
-<footer>
+Estos árboles pueden manejar funciones booleanas, comenzando con valores de verdadero o falso. Sin embargo, requieren un número exponencial de nodos para alcanzar una mejor precisión. Para mejorar la eficiencia, se usa **recursión**, tomando en cuenta una cantidad limitada de pasos y una profundidad determinada.
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+### Entropía y Ganancia de Información
+- La entropía es alta cuando los datos tienen una distribución uniforme.
+- Cuando la distribución no es uniforme, la entropía es baja.
+- Se utilizan condiciones y métricas de ganancia de información para mejorar las decisiones dentro del árbol.
 
----
+El uso de árboles de decisión permite modelar problemas complejos de clasificación y predicción, proporcionando interpretabilidad y eficacia en el procesamiento de datos.
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+### Uno de los temas que si me gustaron, fue juegos y la busqueda de adversarios
+aqui se mencionan a los juegos que se hicieron, como Checkers, Chess, Go, y el mas bueno, Pacman;
+Este cuenta con agentes, y e, busqueda adversarial, es aplicable Minimax y  Alfa-Beta, se menciona sobre los caminos
+la distancia de bolitas amarillas mas cercanas, distancia de fantasmas, los power ups restantes, en si esto hace una evaluacion.
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+### Inferencia Probabilistica y Bayesiana
+Es el proceso de calcular probabilidades a partir de una distribucion conjunta, de una red bayesiana, que es un modelo probabilistico grafico que representa un conjunto de variables aleatorias y sus dependencias condicionales, aqui hay una variable de consulta, una evidencia, y variables ocultas, hay metodos de inferencia:
+Inferencia por Enumeracion, Eliminacion de variables, Aproximada,(que usa Muestreo Previo, Rejection Sampling, Likelihood Wighting y Markov)
